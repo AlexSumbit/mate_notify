@@ -1,0 +1,366 @@
+@font-face {
+	font-family: helvetica-neue;
+	src: url(../fonts/helvetica-neue.ttf);
+}
+
+body{
+	overflow-x: hidden;
+}
+
+
+
+header{
+	background-image: url(../img/header-bg.png);
+	background-size: cover;
+	border-top: 10px solid #2ecc71;
+	color: #fff;
+	padding-bottom: 170px;
+	position: relative;
+}
+
+header .header-container{
+	padding-left: 30px;
+	display: none;
+}
+
+header .header-container .logo{
+	font-family: 'Pacifico';
+	font-size: 60px;
+	margin-top: 170px;
+}
+
+header .header-container .logo .dot{
+	color: #2ecc71;
+}
+
+header .header-container .info{
+	font-size: 24px;
+	font-family: 'helvetica-neue';
+	margin-top: 40px;
+}
+
+header .header-container .app-links-container{
+	/*overflow: auto;*/
+	margin-top: 25px;
+}
+
+header .header-container .app-links-container .app-link{
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	line-height: 47px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 100%;
+	margin-right: 15px;
+	transition: 0.1s background-color, transform;
+}
+
+header .header-container .app-links-container .app-link:hover{
+	background-color: #2ecc71;
+	transform: scale(1.1);
+}
+
+
+header .bg-image{
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+header .hand-container{
+	width: 437px;
+	height: 507px;
+	background-image: url(../img/hand.png);
+	bottom: 0;
+	right: -500px;
+	transition: 0.3s right;
+}
+
+header .hand-container .display{
+	background-image: url(../img/display.png);
+	width: 163px;
+	height: 245px;
+	top: 66px;
+	left: 66px;
+}
+
+header .hand-container .lighting{
+	background-image: url(../img/lighting.png);
+	width: 68px;
+	height: 204px;
+	top: 66px;
+	left: 66px;
+}
+
+
+.section{
+	padding: 50px 0;
+}
+
+main .advantages-container .advantage{
+	text-align: center;
+	transition: 0.5s transform;
+}
+
+main .advantages-container .advantage:hover{
+	transform: rotateZ(10deg);
+}
+
+main .advantages-container .advantage .icon{
+	width: 100px;
+	height: 100px;
+	background-color: #2ecc71;
+	margin: auto;
+	line-height: 100px;
+	border-radius: 100%;
+}
+
+main .advantages-container .advantage .title{
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-size: 22px;
+	color: #222222;
+	margin-top: 25px;
+}
+
+main .description{
+	font-family: 'helvetica-neue';
+	font-size: 16px;
+	color: #848484;
+	margin-top: 25px;
+}
+
+
+
+main .sub-title{
+	font-family: 'Raleway';
+	font-weight: 600;
+	color: #222222;
+	font-size: 22px;
+}
+
+
+
+main .subscribe-container{
+	background-color: #e3e3e3;
+}
+
+main .subscribe-container .subscribe-form{
+	position: relative;
+	margin-top: 25px;
+}
+
+main .subscribe-container .subscribe-form .email{
+	border: 1px solid #c8c8c8;
+	background-color: #fff;
+	padding: 15px;
+	font-family: 'helvetica-neue';
+	font-size: 18px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 305px;
+	border-right: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+main .subscribe-container .subscribe-form .submit{
+	position: absolute;
+	left: 305px;
+	color: #fff;
+	border: none;
+	font-size: 22px;
+	font-family: 'Raleway';
+	font-weight: 600;
+	width: 145px;
+	height: 57px;
+	line-height: 57px;
+	text-align: center;
+	background-color: #2ecc71;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	outline: none;
+	transition: 0.3s background-color;
+}
+
+main .subscribe-container .subscribe-form .submit:hover{
+	background-color: #3edc81;
+}
+
+main .subscribe-container .video-container{
+	border-radius: 10px;
+	overflow: hidden;
+	width: 500px;
+	height: 282px;
+	position: relative;
+	float: right;
+}
+
+main .subscribe-container .video-container iframe{
+	border: none;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+main .comments-container .comment{
+	text-align: center;
+}
+
+main .comments-container .comment .text{
+	font-size: 18px;
+	color: #848484;
+	font-family: 'helvetica-neue';
+	font-style: italic;
+}
+
+main .comments-container .comment .name{
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+main .comments-container .faces-container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	position: relative;
+}
+
+main .comments-container .faces-container:after{
+	display: block;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 4%,rgba(255,255,255,0) 96%,rgba(255,255,255,1) 100%);
+}
+
+main .comments-container .faces-container .face{
+	width: 50px;
+	height: 50px;
+	background-color: #1c7a44;
+}
+
+main .comments-container .faces-container .face img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transition: 0.3s opacity;
+}
+
+main .comments-container .faces-container .face img:hover{
+	opacity: 0.3;
+}
+
+
+
+
+main .comments-container .social-container{
+	margin-top: 60px;
+}
+
+main .comments-container .social-container .links-container{
+	text-align: center;
+	margin-top: 25px;
+	font-size: 0;
+}
+
+main .comments-container .social-container .links-container .link{
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	border-radius: 100%;
+	background-color: #d4d4d4;
+	line-height: 32px;
+	transition: 0.3s background-color, transform;
+	margin: 0 5px;
+}
+
+main .comments-container .social-container .links-container .link:hover{
+	background-color: #62d995;
+	transform: scale(1.1);
+}
+
+
+
+
+
+footer{
+	background-color: #e3e3e3;
+	text-align: center;
+}
+
+footer .link{
+	color: #848484;
+	font-size: 16px;
+	font-family: 'helvetica-neue';
+	margin: 0 13px;
+}
+
+
+
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+	header .hand-container{
+		display: none;
+	}
+	main .subscribe-container .subscribe-form .email{
+		width: 205px;
+	}
+
+	main .subscribe-container .subscribe-form .submit{
+		width: 90px;
+		left: 205px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+	main .subscribe-container .subscribe-form{
+		margin-bottom: 25px;
+	}
+	main .subscribe-container .video-container{
+		float: none;
+	}
+	main .comments-container .faces-container{
+		flex-flow: row wrap;
+	}
+	main .advantages-container .advantage{
+		margin-top: 25px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	header{
+		padding-bottom: 100px;
+	}
+	header .header-container .logo{
+		margin-top: 100px;
+	}
+	main .subscribe-container .video-container{
+		width: 405px;
+		height: 229px;
+	}
+	footer .link{
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	main .subscribe-container .video-container{
+		width: 311px;
+		height: 176px;
+	}
+}
